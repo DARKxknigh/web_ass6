@@ -1,0 +1,4 @@
+# SEO friendly product links: /product/5/some-name -> product.php?id=5
+RewriteEngine On
+RewriteBase /ecommerce/
+RewriteRule ^product/([0-9]+)(/.*)?$ product.php?id=$1 [L,QSA]
